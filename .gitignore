@@ -10,7 +10,7 @@ yarn.lock
 dist/
 #build/
 #*.crx
-#*.zip
+*.zip
 *.pem
 #web-ext-artifacts/
 

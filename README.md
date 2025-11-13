@@ -6,6 +6,28 @@ When an AdBlock Detector popup appears simply click the extension icon to remove
 
 Install the extension [here](build/AdBlock-Detector-Bypass-updated.crx)
 
+### Installation Instructions
+
+Follow these steps to install the `.crx` file manually in Chrome:
+
+1. **Download the Extension**  
+   Download the `.crx` file from [here](build/AdBlock-Detector-Bypass-updated.crx).
+
+2. **Open the Extensions Page**  
+   In Chrome, go to `chrome://extensions/`
+
+3. **Enable Developer Mode**  
+   Toggle the **Developer mode** switch in the top right corner of the page.
+
+4. **Install the Extension**  
+   Drag and drop the downloaded `.crx` file onto the Extensions page.  
+   Chrome will prompt you to confirm — click **Add Extension**.
+
+5. **Verify Installation**  
+   The extension should now appear in your extensions list and on your toolbar.  
+   You can pin it for quick access if needed.
+
+
 ### Version 3.0 - Enhanced Protection
 
 **What's New:**
