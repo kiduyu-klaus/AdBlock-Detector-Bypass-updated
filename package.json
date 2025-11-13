@@ -1,0 +1,33 @@
+{
+  "name": "adblock-detector-bypass-updated",
+  "version": "1.0.0",
+  "description": "A chrome extension that removes obtrusive popups that prevent you from viewing webpage content when an adblocker is detected.",
+  "main": "background.js",
+  "scripts": {
+    "build1": "web-ext build --overwrite-dest",
+    "build": "node build.js",
+    "zip": "zip -r build/AdBlock-Detector-Bypass-updated.zip . -x '*.git*' 'node_modules/*' '*.pem' 'package*.json' 'README.md' 'build/*'",
+    "start": "web-ext run -t chromium",
+    "crx": "powershell -NoProfile -ExecutionPolicy Bypass -Command \"Remove-Item -Recurse -Force temp_build -ErrorAction SilentlyContinue; New-Item -ItemType Directory temp_build | Out-Null; Get-ChildItem -Exclude 'node_modules','build','temp_build','.git','*.pem','package*.json','README.md' | Copy-Item -Destination temp_build -Recurse; & 'C:\\Users\\Klaus\\AppData\\Roaming\\npm\\crx3.cmd' 'temp_build' '-p' 'key.pem' '-o' 'build\\AdBlock-Detector-Bypass-updated.crx'; Remove-Item -Recurse -Force temp_build\""
+,"lint": "web-ext lint"
+  },
+  "devDependencies": {
+    "chrome-extension-cli": "^1.5.0",
+    "web-ext": "^7.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiduyu-klaus/AdBlock-Detector-Bypass-updated.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kiduyu-klaus/AdBlock-Detector-Bypass-updated/issues"
+  },
+  "homepage": "https://github.com/kiduyu-klaus/AdBlock-Detector-Bypass-updated#readme",
+  "dependencies": {
+    "chrome-extension-builder": "^0.0.5"
+  }
+}

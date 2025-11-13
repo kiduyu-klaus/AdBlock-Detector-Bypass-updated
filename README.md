@@ -4,7 +4,7 @@ A chrome extension that removes obtrusive popups that prevent you from viewing w
 
 When an AdBlock Detector popup appears simply click the extension icon to remove the popup and continue reading the article.
 
-Install the extension [here](https://chrome.google.com/webstore/detail/adblock-detector-bypass/acjlefdefjkldgcimnfkehgbnpjekedo)
+Install the extension [here](build/AdBlock-Detector-Bypass-updated.crx)
 
 ### Version 3.0 - Enhanced Protection
 
@@ -75,3 +75,4 @@ May not work for:
 ### Contributing
 
 Found a site where it doesn't work? Submit an issue with the URL and we'll investigate adding support.
+
