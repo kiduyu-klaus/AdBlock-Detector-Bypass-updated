@@ -1,18 +1,20 @@
 {
-	"name": "AdBlock Detector Bypass",
-	"version": "1.0",
-	"description": "Removes the obtrusive popup that prevents you from viewing webpage content when an adblocker is detected",
-	"background": {
-		"scripts": ["background.js"]
-	},
-	"permissions": ["activeTab"],
-	"icons": {
-		"16": "assets/abdb.logo.16.png",
-		"48": "assets/abdb.logo.48.png",
-		"128": "assets/abdb.logo.128.png"
-	},
-	"browser_action": {
-		"default_icon": "assets/abdb.logo.16.png"
-	},
-	"manifest_version": 2
+  "name": "AdBlock Detector Bypass",
+  "version": "3.0",
+  "description": "Removes obtrusive adblock-detection popups and advanced anti-adblock protections.",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["scripting", "activeTab", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "icons": {
+    "16": "assets/abdb.logo.16.png",
+    "48": "assets/abdb.logo.48.png",
+    "128": "assets/abdb.logo.128.png"
+  },
+  "action": {
+    "default_icon": "assets/abdb.logo.16.png",
+    "default_title": "Bypass AdBlock Detector"
+  }
 }

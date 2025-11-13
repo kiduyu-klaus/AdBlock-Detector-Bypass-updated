@@ -1,3 +1,7 @@
-chrome.browserAction.onClicked.addListener(function(tab) {
-	chrome.tabs.executeScript(null, {file: "changeDom.js"});
+chrome.action.onClicked.addListener(async (tab) => {
+  if (!tab.id) return;
+  await chrome.scripting.executeScript({
+    target: { tabId: tab.id },
+    files: ["changeDom.js"]
+  });
 });
